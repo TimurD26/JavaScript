@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <style>
+  body {
+    padding : 10px ;
+    
+  }
+  
+  #exTab1 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  #exTab2 h3 {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+  /* remove border radius for the tab */
+  
+  #exTab1 .nav-pills > li > a {
+    border-radius: 0;
+  }
+  
+  /* change border radius for the tab , apply corners on top*/
+  
+  #exTab3 .nav-pills > li > a {
+    border-radius: 4px 4px 0 0 ;
+  }
+  
+  #exTab3 .tab-content {
+    color : white;
+    background-color: #428bca;
+    padding : 5px 15px;
+  }
+  
+</style>
+  
+  
+  
+  
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="node_modules\bootstrap\dist\css\bootstrap.min.css" rel="stylesheet">
+
+    <title>Weather Site!</title>
+  </head>
+  <body>
+    <style>
+   #posts row
+   {
+    text-align: -webkit-center;
+   }
+    </style>
+    <h1></h1>
+
+    <div class="container">
+ 
+      <div class="row justify-content-md-center">
+        <!-- <div class="col col-lg-2">
+          1 of 3
+        </div> -->
+        
+      
+        <!-- <div class="col col-lg-2">
+          3 of 3
+        </div> -->
+      </div>
+
+        
+
+    </div>
+
+    <main role="main">
+
+      
+
+           <!-- START THE FEATURETTES -->
+  
+           <hr class="featurette-divider">
+           <div class="container">
+
+            <div class="row">
+              <div class="col">
+                
+              </div>
+              <div class="col-5">
+                 <div class="col-sd-6">
+            <div class="row">
+            <div class="input-group">
+              <input type="text" class="form-control"  id="inputSearch6"  >
+              <div class="input-group-append">
+                <button type="button" class="btn btn-secondary" id="searchbtn">search</button>
+              </div>
+            </div>
+          </div>
+        </div>
+              </div>
+              <div class="col">
+              
+              </div>
+            </div>
+          </div>
+
+
+
+          
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#tabs-1" role="tab">Today</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">5-days forecast</a>
+            </li>
+           
+          </ul><!-- Tab panes -->
+          <div class="tab-content">
+            <div class="tab-pane active" id="tabs-1" role="tabpanel">
+              
+            <div id="posts"></div>
+
+          <div>
+            <h3>HOURLY</h3>
+            <div class="row" id="items1"></div>
+          </div>
+          <div>
+            <h3>Nearby cities</h3>
+                <div class="row" id="cell"></div>
+              </div>
+
+            </div>
+            <div class="tab-pane" id="tabs-2" role="tabpanel">
+
+              <div>
+                <div class="row" id="days"></div>
+              </div>
+                
+              <div>
+                <h3>HOURLY</h3>
+                <div class="row" id="sunday"></div>
+              </div>
+
+            </div>
+         
+          </div>
+
+
+
+           </div>
+          
+     
+         <hr class="featurette-divider">
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+
+   
+
+
+     
+
+          <!-- <p> -->
+           
+             
+            <!-- <div id="posts"></div>
+              <div class="row" id="items1"></div>
+    <div class="row" id="cell"></div>
+       -->
+
+       
+      <!-- <h2>HOURLY</h2>
+
+      <div class="row" id="items1">
+        <div class="col-lg-4">
+  
+ 
+    </div>
+   -->
+  
+  
+   <!-- </div> /.container -->
+
+    <br>
+    <br>
+    <div class="row justify-content-md-center">
+      <div class="col col-lg-2">
+        
+      </div>
+      <div class="col-md-auto">
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            <!-- <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li> -->
+            <!-- <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li> -->
+            <!-- <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li> -->
+          </ul>
+        </nav>
+      </div>
+      <div class="col col-lg-2">
+      
+      </div>
+    </div>
+    
+ 
+  
+      <!-- /END THE FEATURETTES -->
+
+    <!-- FOOTER -->
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2017-2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+
+
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+    
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
